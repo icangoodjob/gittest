@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор стоимости</title>
+	<link rel="stylesheet" href="css/nullstyle.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="calculator area">
+		<div class="_container">
+			<div class="calculator__header">
+				<div class="calculator__title area">
+					<h3 class="red">Калькулятор</h3>
+					<p class="calculator__subtitle area">стоимости оклейки</p>
+				</div>
+				<ul class="calculator__steps area">
+					<li class="calculator__step current-step">Шаг 1</li>
+					<li class="calculator__step">Шаг 2</li>
+					<li class="calculator__step">Шаг 3</li>
+				</ul>
+				<div class="calculator__step-title">
+					<h3 class="red">Выберите область наклейки</h3>
+				</div>
+			</div>
+			<div class="calculator__table table-grid">
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__head">выбрать</div>
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__head">Элемент кузова</div>
+						<div class="table-grid__content ">
+							<div class="table-grid__text">
+								ВСЯ МАШИНА
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__head">иллюстрация</div>
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__head"><span>стоимость</span><span>₽</span></div>
+						<div class="table-grid__content">
+							<div class="table-grid__price">220 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text table-gird__text-danger">
+								<div class="table-grid__text-head">
+									зоны риска
+								</div>
+								<ul class="table-grid__content-list">
+									<li>- Передний бампер</li>
+									<li>- Капот</li>
+									<li>- Передние крылья</li>
+									<li>- Фары</li>
+									<li>- Зеркала</li>
+									<li>- Стойки лобового стекла</li>
+									<li>- Полоса на крышу</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car-risk.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">70 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Передний бампер
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car3.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">22 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Передние крылья, 2шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car4.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">24 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Капот полностью
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car5.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">22 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Фары, 2шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car6.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">6 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Накладки на <br> зеркала, 2шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car7.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">6 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Стойки передние, 2шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car8.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">6 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Ударная часть <br> крыши (полоса)
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car9.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">6 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Крыша полностью
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car10.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">22 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Пространство под ручками, 4шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car11.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">2 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Зона погрузки <br> заднего бампера
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car12.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">3 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Дверь передняя
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car13.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">15 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Бампер задний
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car15.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">22 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Крылья задние + <br> стойки целиком, 2шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car16.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">48 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Расширители <br> колесных арок, 2шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car17.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">10 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Крышка багажника
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car18.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">15 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Пороги <br> (внешняя часть), 2шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car19.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">20 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Пороги <br> (внутренняя часть), 4шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car20.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">8 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="table-grid__list">
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="checkbox">
+								<input type="checkbox" name="namecheckbox_1">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__text">
+								Часть арок задних <br> крыльев, 2шт.
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__img">
+								<img src="img/table/table-car21.png" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="table-grid__list-item">
+						<div class="table-grid__content">
+							<div class="table-grid__price">6 000<span>₽</span></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="calculator__box calculator-box">
+				<div class="calculator-box__items">
+					<div class="calculator-box__item">
+						<div class="calculator-box__name">тип авто</div>
+						<a href="#" class="calculator-box__link">Средний класс</a>
+					</div>
+					<div class="calculator-box__item">
+						<div class="calculator-box__name">пленка</div>
+						<a href="#" class="calculator-box__link">Прозрачная глянцевая плёнка</a>
+					</div>
+					<div class="calculator-box__item">
+						<div class="calculator-box__name">область оклейки</div>
+						<a href="#" class="calculator-box__link">Вся машина</a>
+					</div>
+				</div>
+			</div>
+			<div class="calculator__result calculator-result">
+				<div class="calculator-result__title"><span>стоимость ОКЛЕЙКИ ВАШЕГО АВТО</span><span>итого стоимостЬ ОКЛЕЙКИ</span></div>
+				<div class="calculator-result__price">220 000<span>₽</span></div>
+			</div>
+			<div class="calculator__footer">
+				<div class="choose-btn__wrap">
+					<button class="calculator__choose-btn" data-modal-button="modal-order">Заказать</button>
+				</div>
+				<div id="modal-order" data-modal class="modal modal-order hidden">
+					<div class="modal-window modal-window-order">
+						<button class="modal-order__close" data-modal-close>
+							<span>Закрыть</span>
+							<img src="img/modal-close-black.svg" alt="">
+						</button>
+						<div class="modal-form">
+							<form action="#">
+								<div class="modal-form__title">СПАСИБО</div>
+								<div class="modal-form__description">
+									Введите, пожалуйста, Ваши данные, чтобы наши 
+									менеджеры могли связаться с Вами
+								</div>
+								<div class="modal-form__fields">
+									<div class="modal-form__item">
+										<input type="text" class="modal-form__input" placeholder="Имя*" required="required">
+									</div>
+									<div class="modal-form__item">
+										<input type="email" class="modal-form__input" placeholder="Почта">
+									</div>
+									<div class="modal-form__item">
+										<input type="tel" class="modal-form__input" placeholder="Телефон*" required="required">
+									</div>
+								</div>
+								<div class="choose-btn__wrap modal-btn__wrap">
+									<button class="calculator__choose-btn" data-modal-button="modal-send" data-modal-close id="modal-sending">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="modal-send" data-modal class="modal modal-thank hidden">
+					<div class="modal-window modal-window-thank">
+						<div class="modal-form modal-form__thank">
+							<div class="modal-form__title modal-thank__title">СПАСИБО</div>
+							<div class="modal-form__description modal-thank__description">
+								Ваша заявка принята, в ближайшее время наш менеджер свяжется с Вами и обсудит все детали.
+							</div>
+							<a href="#" class="modal-thank__logo">
+								<img src="img/table/modal-logo.png" alt="">
+							</a>
+							<div class="choose-btn__wrap modal-btn__wrap">
+								<a href="#" class="calculator__choose-btn" data-modal-close>Главная страница</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script>
+		$(document).ready(function() {
+	//CHECKBOX
+	$.each($('.checkbox'), function(index, val) {
+		if($(this).find('input').prop('checked')==true){
+			$(this).addClass('active');
+		}
+	});
+	$(document).on('click', '.checkbox', function(event) {
+		if($(this).hasClass('active')){
+			$(this).find('input').prop('checked',false);
+		}else{
+			$(this).find('input').prop('checked',true);
+		}
+		$(this).toggleClass('active');
+		return false;
+	});
+});
+		var inputsTel = document.querySelectorAll('input[type="tel"]');
+		inputsTel.forEach(function(item){
+			item.addEventListener('input', function(){
+				document.querySelector('input[type="tel"]').defaultValue = document.querySelector('input[type="tel"]').value;
+			})
+		});
+		Inputmask({
+			"mask": "+7 (999) 999 - 99 - 99",
+			showMaskOnHover: false
+		}).mask(inputsTel);
+		// ========================= МОДАЛЬНЫЕ ОКНА ========================================
+		const modalButtons = document.querySelectorAll('[data-modal-button]');
+		const modalClosebuttons = document.querySelectorAll('[data-modal-close]');
+		const allModals = document.querySelectorAll('[data-modal]');
+// Кнопки - Открыть Модалку
+modalButtons.forEach(function (item) {
+	item.addEventListener('click', function () {
+		const modalId = this.dataset.modalButton;
+		const modal = document.querySelector('#' + modalId);
+		modal.classList.remove('hidden');
+		document.body.classList.add('_lock');
+		modal.querySelector('.modal-window').addEventListener('click', function (e) {
+			e.stopPropagation();
+		});
+	})
+})
+// Кнопки - Закрыть Модалку
+modalClosebuttons.forEach(function (item) {
+	item.addEventListener('click', function (e) {
+		e.preventDefault();
+		const modal = this.closest('[data-modal]');
+		modal.classList.add('hidden');
+		document.body.classList.remove('_lock');
+	})
+})
+// Закрытие модалок по фейду
+allModals.forEach(function (item) {
+	item.addEventListener('click', function () {
+		console.log(item);
+		this.classList.add('hidden');
+		document.body.classList.remove('_lock');
+	});
+});
+</script>
+</body>
+</html>

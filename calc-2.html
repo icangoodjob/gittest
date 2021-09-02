@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calc-2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+	<div class="calculator__title">
+		<p class="llumar-subtitle red">калькулятор</p>
+		<p class="llumar-title">стоимости оклейки</p>
+	</div>
+	<div class="container">
+		<ul class="calculator__steps">
+			<li class="calculator__step">Шаг 1</li>
+			<li class="calculator__step current-step">Шаг 2</li>
+			<li class="calculator__step">Шаг 3</li>
+		</ul>
+		<div class="calculator__step-title">
+			<h3 class="red">Выберите пленку</h3>
+		</div>
+		<div class="mobile-slider__container mobile-slider__container-calc" data-mobile="false">
+			<div class="calculator__choose-wrapper index">
+				<div class="calculator__choose-col">
+					<div class="calculator__choose-item">
+						<div class="calculator__choose-head">
+							<p class="choose-item__title">Средний класс</p>
+							<span data-modal-button="modal-4">Подробнее</span>
+						</div>
+						<div class="calculator__choose-body">
+							<p class="calculator__number">01 <span class="calculator-dot"></span></p>
+							<p class="calculator-descr">Плёнка классических чёрных оттенков</p>
+						</div>
+						<div class="choose-btn__wrap llumar">
+							<button class="calculator__choose-btn">Выбрать</button>
+						</div>	
+					</div>
+				</div>
+				<div class="calculator__choose-col">
+					<div class="calculator__choose-item">
+						<div class="calculator__choose-head">
+							<p class="choose-item__title">Бизнес класс <br> и кроссоверы</p>
+							<span data-modal-button="modal-5">Подробнее</span>
+						</div>
+						<div class="calculator__choose-body">
+							<p class="calculator__number">02 <span class="calculator-dot"></span></p>
+							<p class="calculator-descr">Атермальная прозрачная плёнка</p>
+						</div>
+						<div class="choose-btn__wrap llumar">
+							<button class="calculator__choose-btn">Выбрать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-slider__controls">
+				<div class="mobile-button-next"></div>
+				<div class="mobile-button-prev"></div>
+				<div class="mobile-slider__pagination"></div>
+			</div>
+		</div>	
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/dynamicadapt.js"></script>
+	<script>
+		const mobileSliderCalculator = document.querySelector('.mobile-slider__container-calc');
+		let mobileSwiperCalculator;
+		function mobSliderCalculator() {
+			if (window.innerWidth <= 991.98 && mobileSliderCalculator.dataset.mobile == 'false'){
+				mobileSwiperCalculator = new Swiper(mobileSliderCalculator, {
+					slidesPerGroup: 1,
+					loop: false,
+					spaceBetween: 20,
+					initialSlide: 0,
+					slideClass: 'calculator__choose-col',
+					wrapperClass: 'calculator__choose-wrapper',
+					pagination: {
+						el: ".mobile-slider__pagination",
+						type: "fraction",
+						formatFractionCurrent: addZero,
+						formatFractionTotal: addZero,
+					},
+					navigation: {
+						nextEl: '.mobile-button-prev',
+						prevEl: '.mobile-button-next',
+					},
+					breakpoints: {
+						320:{
+							slidesPerView: 1,
+							spaceBetween: 20,
+						},
+						767:{
+							slidesPerView: 2,
+							spaceBetween: 20,
+						},
+					}
+				});
+				mobileSliderCalculator.dataset.mobile = 'true';
+			};
+			if (window.innerWidth > 991) {
+				mobileSliderCalculator.dataset.mobile = 'false';
+				if (mobileSliderCalculator.classList.contains('swiper-container-initialized')){
+					mobileSwiperCalculator.destroy();
+				}
+			}
+		};
+		mobSliderCalculator();
+		window.addEventListener('resize', () => {
+			mobSliderCalculator();
+		});
+		function addZero(num){
+			return (num > 9) ? num : '0' + num;
+		}
+	</script>
+</body>
+</html>

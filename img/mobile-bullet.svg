@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25">
+  <g id="Сгруппировать_4106" data-name="Сгруппировать 4106" transform="translate(-272 -350.002)">
+    <ellipse id="Эллипс_256" data-name="Эллипс 256" cx="13" cy="12.5" rx="13" ry="12.5" transform="translate(272 350.002)" fill="#d4091b" opacity="0.4"/>
+    <circle id="Эллипс_257" data-name="Эллипс 257" cx="9" cy="9" r="9" transform="translate(276 354.002)" fill="#d4091b"/>
+    <path id="Многоугольник_24" data-name="Многоугольник 24" d="M1,0,2,3H0Z" transform="translate(288 362) rotate(90)" fill="#fff"/>
+    <path id="Многоугольник_25" data-name="Многоугольник 25" d="M1,0,2,3H0Z" transform="translate(282 364) rotate(-90)" fill="#fff"/>
+    <path id="Многоугольник_24-2" data-name="Многоугольник 24" d="M1,0,2,3H0Z" transform="translate(284 360)" fill="#fff"/>
+    <path id="Многоугольник_25-2" data-name="Многоугольник 25" d="M1,0,2,3H0Z" transform="translate(286 366) rotate(180)" fill="#fff"/>
+  </g>
+</svg>
